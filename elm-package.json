@@ -1,5 +1,5 @@
 {
-    "version": "1.0.1",
+    "version": "1.1.0",
     "summary": "Get and set browser cookies.",
     "repository": "http://github.com/elm-lang/cookie.git",
     "license": "BSD3",
