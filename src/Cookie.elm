@@ -41,6 +41,8 @@ You may want to make other choices to further restrict things.
 
 
 import Cookie.LowLevel as LL
+import Date exposing (Date)
+import Task exposing (..)
 
 
 {-| Setting cookies may fail for reasons including:
@@ -79,7 +81,7 @@ set options key value =
       , format "domain" identity options.domain
       , format "path" identity options.path
       , format "max-age" toString options.maxAge
-      , if secure then ";secure" else ""
+      , if options.secure then ";secure" else ""
       ]
   in
     LL.set (String.concat chunks)

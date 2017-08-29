@@ -7,6 +7,7 @@ to use the `Cookie` module, not `Cookie.LowLevel`.
 -}
 
 import Native.Cookie
+import Task exposing (..)
 
 
 {-| Get the contents of `document.cookie` as a string.
